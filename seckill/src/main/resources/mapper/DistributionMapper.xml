@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.suixingpay.seckill.mapper.DistributionMapper">
+    <resultMap id="DistributionResultMap" type="com.suixingpay.seckill.pojo.Distribution">
+        <id column="distribution_id" property="distributionId" jdbcType="INTEGER"/>
+        <result column="distribution_source_id" property="distributionSourceId" jdbcType="INTEGER"/>
+        <result column="distribution_user_id" property="distributionUserId" jdbcType="INTEGER"/>
+        <result column="distribution_activity_id" property="distributionActivityId" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Source_Column_List">
+        distribution_id, distribution_source_id, distribution_user_id, distribution_activity_id
+    </sql>
+</mapper>

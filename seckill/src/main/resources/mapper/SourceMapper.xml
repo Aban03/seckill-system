@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.suixingpay.seckill.mapper.SourceMapper">
+    <resultMap id="SourceResultMap" type="com.suixingpay.seckill.pojo.Source">
+        <id column="source_id" property="sourceId" jdbcType="INTEGER"/>
+        <result column="source_phone" property="sourcePhone" jdbcType="VARCHAR"/>
+        <result column="source_name" property="sourceName" jdbcType="VARCHAR"/>
+        <result column="source_sex" property="sourceSex" jdbcType="INTEGER"/>
+        <result column="source_province" property="sourceProvince" jdbcType="VARCHAR"/>
+        <result column="source_status" property="sourceStatus" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Source_Column_List">
+        source_id, source_phone, source_name, source_sex, source_province, source_status
+    </sql>
+</mapper>
